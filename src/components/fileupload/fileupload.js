@@ -3,7 +3,7 @@ import { MdCloudUpload, MdDelete } from 'react-icons/md'
 import { AiFillFileImage } from 'react-icons/ai'
 import Canvas from '../../Canvas';
 import "./fileupload.css"
-import layer from "./layer.png"
+
 
 
 function FileUploadComponent() {
@@ -61,7 +61,7 @@ function FileUploadComponent() {
 
       <div style={{ display: '' }}>
         <div style={{ marginRight: "20px", marginTop: "30px" }}>
-          {images.length > 0 && <img src={images[0]} width={280} height={280} alt="" />}
+          {images.length > 0 && <img  src={images[0]} width={280} height={280} alt="upload" />}
         </div>
         <main>
           <div style={{ marginTop: "25px" }}>
@@ -77,9 +77,9 @@ function FileUploadComponent() {
                   border: '1px solid #ddd',
                   borderRadius: '8px',
                   boxShadow: '0px 2px 6px rgba(0, 0, 0, 0.1)',
-                  padding: '8px',
                   margin: "5px"
                 }}
+                
               >
                 <div>{/* Render additional image information if needed */}</div>
               </div>
@@ -88,6 +88,11 @@ function FileUploadComponent() {
         </main>
       </div>
     </>
+
+
+
+
+
   );
 }
 
